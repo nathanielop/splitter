@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "video-splitter",
+  "version": "0.0.1",
+  "description": "An npm package for splitting videos at predefined intervals",
+  "main": "index.js",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "1",
+    "commander": "12",
+    "fluent-ffmpeg": "2",
+    "luxon": "3"
+  },
+  "devDependencies": {
+    "eslint-config-coderiety": "2"
+  },
+  "author": "Nathaniel Pendy",
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "coderiety"
+  }
+}
