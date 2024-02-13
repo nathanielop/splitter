@@ -4,6 +4,9 @@
   "version": "0.0.1",
   "description": "An npm package for splitting videos at predefined intervals",
   "main": "src/index.js",
+  "bin": {
+    "splitter": "./src/index.js"
+  },
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "1",
     "@ffprobe-installer/ffprobe": "2",
