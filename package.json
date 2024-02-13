@@ -8,8 +8,7 @@
     "@ffmpeg-installer/ffmpeg": "1",
     "@ffprobe-installer/ffprobe": "2",
     "commander": "12",
-    "fluent-ffmpeg": "2",
-    "luxon": "3"
+    "fluent-ffmpeg": "2"
   },
   "devDependencies": {
     "eslint-config-coderiety": "2"
