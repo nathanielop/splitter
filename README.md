@@ -4,7 +4,7 @@ A lightweight node CLI to split a video into predefined lengths. Useful for spli
 
 ## Arguments
 1. Path to video file source
-2. (Optional, default: current directory) Path to output to
+2. Path to output to
 
 
 ## Options
