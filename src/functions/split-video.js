@@ -40,6 +40,7 @@ export default async (path, output, options) => {
   const outputDir = await getValidOutputDir(output);
   const endSeconds = end ?? duration;
   const intervalSeconds = getDurationSeconds(interval);
+  const format = metaData.format.format_name.split(',')[0];
 
   let from = start ?? 0;
   let i = 0;
@@ -49,10 +50,10 @@ export default async (path, output, options) => {
     ffmpeg(path)
       .setStartTime(from)
       .setDuration(to - from)
-      .format(metaData.format.format_name.split(',')[0])
+      .format(format)
       .on('error', err => console.error(err))
       .on('end', () => console.log(`Trimmed clip ${i}`))
-      .pipe(createWriteStream(`${outputDir}/${i}.mp4`));
+      .pipe(createWriteStream(`${outputDir}/${i}.${format}`));
 
     from = to;
     i++;
