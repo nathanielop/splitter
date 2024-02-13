@@ -3,9 +3,10 @@
   "name": "video-splitter",
   "version": "0.0.1",
   "description": "An npm package for splitting videos at predefined intervals",
-  "main": "index.js",
+  "main": "src/index.js",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "1",
+    "@ffprobe-installer/ffprobe": "2",
     "commander": "12",
     "fluent-ffmpeg": "2",
     "luxon": "3"
